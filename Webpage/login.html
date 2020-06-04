@@ -11,6 +11,11 @@
 
 <body>
     
+<div id="header">
+</div>
+
+
+
     <div id="position-wrapper">
         <section>
             </h1>
@@ -25,6 +30,7 @@
                     <input id="UserName" type="text" placeholder="User name">
                     <br>
                     <input id="password"type="text" placeholder="Password">
+                    <p><a href="login.html"></a></p>
                     
                 </div>
                 <button>
@@ -36,8 +42,19 @@
 
         </section>
     </div>
+<div id="footer"></div>
+
+<script>
+    $(function() {
+    $("#header").load("index.html #header");
+    $("#footer").load("index.html #footer");
+    });
+</script>
+
+   
 
 </body>
+
 
 <script src="script.js"></script>
 
