@@ -104,12 +104,9 @@ button{
     padding: 20px 10px; 
 }
 
-#header-wrapper{
-    display: flex;
-    justify-content: flex-end;
-}
-
 #header div.logo {
+    display: flex;
+    align-items: center;
     font-size: 25px;
     font-weight: bold;
 }
@@ -136,6 +133,8 @@ a:visited{
 }   
 
 .topnav {
+    display:flex;
+    justify-content: space-between;
     overflow: hidden;
   }
   
@@ -159,12 +158,20 @@ a:visited{
   }
   
   @media screen and (max-width: 900px) {
+    .topnav{
+        display: block;
+    }
+    
     .topnav a {
       display: none;
     }
     .topnav a.icon {
         float: right;
         display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
     }
     #header-wrapper{
         display: inline;
@@ -172,7 +179,7 @@ a:visited{
   }
   
   @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
+    /*.topnav.responsive {position: relative;} */
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
