@@ -9,21 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="body">
     
-<div id="header">
-</div>
+<div id="headerFiller"></div>
 
 
 
     <div id="position-wrapper">
-        <section>
-            </h1>
             <div id="main-content">
                 <div id="text-wrapper">
                 <div id="overhead">
                     <h1 id="">Login</h1>
-
                 </div>
                 <div id="login">
                 
@@ -37,17 +33,15 @@
                     Log in
                 </button>
             </div>
-
             </div>
-
-        </section>
     </div>
-<div id="footer"></div>
+<div id="footerFiller"></div>
 
 <script>
+    //TODO - Delete the filler element after loading it. 
     $(function() {
-    $("#header").load("index.html #header");
-    $("#footer").load("index.html #footer");
+    $("#headerFiller").load("index.html #header");
+    $("#footerFiller").load("index.html #footer");
     });
 </script>
 

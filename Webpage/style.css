@@ -1,13 +1,10 @@
-
-html{
+html {
     min-height: 100%;
     position: relative;
-
 }
 
-body{
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
     /*
     background-image: url('Img/keyboard.jpg');
     background-repeat: no-repeat;
@@ -17,76 +14,61 @@ body{
     position: relative;
     z-index: -1;
     */
-    
-
     font-size: 22px;
     margin: 0;
 }
 
-#content-Wrapper{
+#content-Wrapper {
     height: 100%;
 }
 
-p{
+p {
     margin: 10px;
 }
+
 #position-wrapper {
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    margin: 100px,0;
-   /* z-index:-1; /* Remove this line if it's not going to be a background! */
-}
-section{
-    position: absolute;
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 10px, 0;
 }
 
-#main-content{
+#main-content {
     background-color: #bbbbbb;
     display: flex;
     justify-content: center;
-
     align-items: center;
-    min-width: 500px;
-    min-height: 400px; 
+    min-width: 700px;
+    min-height: 650px;
+    margin: 18vh;
 }
 
-#overhead{
+#overhead {
     display: flex;
     justify-content: center;
 }
-input{
+
+input {
     height: 20px;
     padding: 0;
     text-indent: 5px;
 }
 
-#login{
+#login {
     align-items: flex-start;
 }
 
-button{
+button {
     width: 100%;
-
 }
 
 @media only screen and (max-width: 426px) {
-    #main-content{
-    min-width: 310px;
-    min-height: 210px; 
+    #main-content {
+        min-width: 310px;
+        min-height: 420px;
     }
 }
-
-
 
 /*
 @media only screen and (min-width: 1200px) {
@@ -98,10 +80,10 @@ button{
 }
 **/
 
-#header{
-   /* overflow: hidden; */
+#header {
+    /* overflow: hidden; */
     background-color: #f1f1f1;
-    padding: 20px 10px; 
+    padding: 20px 10px;
 }
 
 #header div.logo {
@@ -111,34 +93,33 @@ button{
     font-weight: bold;
 }
 
-
-#footer{
+#footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 10px 10px; 
+    padding: 10px 10px;
     background-color: #f1f1f1;
     color: rgb(7, 7, 7);
     text-align: center;
- }
+}
 
 #footer a:hover {
     background-color: #ddd;
     color: black;
 }
 
-a:visited{
+a:visited {
     color: black;
-}   
+}
 
 .topnav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     overflow: hidden;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     float: left;
     display: block;
     color: #333;
@@ -146,24 +127,23 @@ a:visited{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #4CAF50;
     color: white;
-  }
-  
-  .topnav .icon {
+}
+
+.topnav .icon {
     display: none;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .topnav{
+}
+
+@media screen and (max-width: 900px) {
+    .topnav {
         display: block;
     }
-    
     .topnav a {
-      display: none;
+        display: none;
     }
     .topnav a.icon {
         float: right;
@@ -173,22 +153,51 @@ a:visited{
         top: 0;
         padding: 20px;
     }
-    #header-wrapper{
+    #header-wrapper {
         display: inline;
     }
-  }
-  
-  @media screen and (max-width: 900px) {
+
+    #main-content {
+        margin: 25vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
     /*.topnav.responsive {position: relative;} */
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
     }
-    
-  }
+}
+
+@media screen and (max-width: 750px) {
+    #main-content {
+        min-width: 550px;
+        min-height: 475px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #main-content {
+        min-width: 350px;
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 375px) {
+    #main-content {
+        min-width: 275px;
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 275px) {
+    #main-content {
+        min-width: 200px;
+        min-height: 325px;
+    }
+}
