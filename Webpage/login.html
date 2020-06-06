@@ -9,7 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="body">
+    
+<div id="headerFiller"></div>
 
     <div id="header">
     </div>
@@ -17,39 +19,34 @@
 
 
     <div id="position-wrapper">
-        <section>
-            </h1>
             <div id="main-content">
                 <div id="text-wrapper">
-                    <div id="overhead">
-                        <h1 id="">Login</h1>
-
-                    </div>
-                    <div id="login">
-
-                        <input id="UserName" type="text" placeholder="User name">
-                        <br>
-                        <input id="password" type="text" placeholder="Password">
-                        <p><a href="login.html"></a></p>
-
-                    </div>
-                    <button>
-                        Log in
-                    </button>
+                <div id="overhead">
+                    <h1 id="">Login</h1>
                 </div>
-
+                <div id="login">
+                
+                    <input id="UserName" type="text" placeholder="User name">
+                    <br>
+                    <input id="password"type="text" placeholder="Password">
+                    <p><a href="login.html"></a></p>
+                    
+                </div>
+                <button>
+                    Log in
+                </button>
             </div>
-
-        </section>
+            </div>
     </div>
-    <div id="footer"></div>
+<div id="footerFiller"></div>
 
-    <script>
-        $(function () {
-            $("#header").load("index.html #header");
-            $("#footer").load("index.html #footer");
-        });
-    </script>
+<script>
+    //TODO - Delete the filler element after loading it. 
+    $(function() {
+    $("#headerFiller").load("index.html #header");
+    $("#footerFiller").load("index.html #footer");
+    });
+</script>
 
 
 
