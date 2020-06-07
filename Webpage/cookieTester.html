@@ -10,9 +10,10 @@
 
 <body>
     <input id="setButton" type="text">
-    <button>Set cookie</button>
-    <button>read cookie</button>
-    <button>delete cookie</button>
+    <button onclick="createCookie('TestCookie', 'testing', 7)">Set cookie</button>
+    <button onclick="alertCookie()" id="readCookie">read cookie</button>
+    <button onclick="eraseCookie('TestCookie')" id="deleteCookie">delete cookie</button>
+    <button id="Display cookies" onclick="showCookies()"> Display cookies</button>
 
 </body>
 
