@@ -10,21 +10,28 @@
 </head>
 
 <body id="body">
-    
-<div id="headerFiller"></div>
+
+    <div id="headerFiller"></div>
+
+    <section id="content">
+
+        <div>
+            <p>Hvordan installere:</p>
+            <p></p>
+        </div>
+    </section>
+
+    <div id="footerFiller"></div>
+
+    <script>
+        //TODO - Delete the filler element after loading it. 
+        $(function () {
+            $("#headerFiller").load("index.html #header");
+            $("#footerFiller").load("index.html #footer");
+        });
+    </script>
 
 
-<div id="footerFiller"></div>
-
-<script>
-    //TODO - Delete the filler element after loading it. 
-    $(function() {
-    $("#headerFiller").load("index.html #header");
-    $("#footerFiller").load("index.html #footer");
-    });
-</script>
-
-   
 
 </body>
 

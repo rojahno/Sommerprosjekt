@@ -14,27 +14,6 @@ body {
     margin: 0;
 }
 
-.content-Wrapper {
-    height: 100%;
-}
-
-
-
-section {
-    display : grid;
-    width: 1000px;
-    height:100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-gap: 0.5em;
-  }
-
-section div{
-    background-color: #7986CB;
-    width: 100%; 
-    height: 100%;
-}
-
 #position-wrapper {
     height: 100%;
     display: flex;
