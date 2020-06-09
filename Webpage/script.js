@@ -6,20 +6,7 @@ script.src = '//code.jquery.com/jquery-1.11.0.min.js';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 -----------------------------------------------------------
-
-let emailInput = document.getElementById("UserName");
-let passwordInput = document.getElementById("password");
-
-/*if(emailInput === undefined && passwordInput === undefined){
-    alert("dummyDum");
-}
-else{
-    alert(emailInput + passwordInput);
-}
-
 */
-
-
 
 function dropDownMenu() {
     var x = document.getElementById("myTopnav");
@@ -33,13 +20,11 @@ function dropDownMenu() {
 }
 
 /**
- * Tried to make the load more universal, but ran into trouble with jquery. 
- * @param {String} $loadTo - should be given in a: ('#loadto') - format
- * @param {String} $loadFrom - should be given in a: ('dir/file #element") - format
+ * A function made to get the input value from an input element.
+ * @param {String} inputElemet 
+ * @returns The input value
  */
-/*
-function loadCommonElements($loadTo, $loadFrom) {
-
-    $($loadTo).load($loadFrom);
+function getInputValue(inputElemet) {
+    var inputValue =  document.getElementById(inputElemet);
+    return inputValue;
 }
-*/
